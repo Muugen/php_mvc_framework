@@ -1,0 +1,15 @@
+{
+    "name": "anthony_huynh/php_mvc_framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "anthony huynh",
+            "email": "anthonyhuynh1204@gmail.com"
+        }
+    ],
+    "require": {}
+}
