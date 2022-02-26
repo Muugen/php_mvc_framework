@@ -1,3 +1,7 @@
+<?php 
+use app\core\Application; 
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,11 +40,14 @@
         </div>
         </nav>
     </header>
-    <main>
         <div class="container">
+            <?php if (Application::$app->session->getFlash('success')): ?>
+                <div class="alert alert-success">
+                    <?php echo Application::$app->session->getFlash('success') ?>
+                </div>
+            <?php endif; ?>
             {{content}}
         </div>
-    </main>
     <footer>
         <p>Copyright &#169; 2022 Anthony HUYNH</p>
     </footer>
