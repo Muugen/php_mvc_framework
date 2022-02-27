@@ -1,5 +1,6 @@
-<?php 
-use app\core\Application; 
+<?php
+use app\core\Application;
+
 ?>
 
 <!doctype html>
@@ -22,21 +23,31 @@ use app\core\Application;
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/">Accueil</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/contact">Nous contacter</a>
                     </li>
                 </ul>
             </div>
-            <ul class="navbar-nav ml-auto">
+            <?php if (Application::isGuest()): ?>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/login">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/register">S'inscrire</a>
+                        </li>
+                </ul>
+            <?php else: ?>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/login">Login</a>
+                    <a class="nav-link" aria-current="page" href="/logout">Bienvenue <?php echo Application::$app->user->getDisplayName() ?>
+                    (Deconnexion)
+                    </a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/register">register</a>
-                    </li>
-            </ul>
+                </ul>
+            <?php endif; ?>
         </div>
         </nav>
     </header>

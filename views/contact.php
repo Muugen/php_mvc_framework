@@ -1,8 +1,8 @@
-<h1>Contact us</h1>
+<h1>Nous contacter</h1>
 
 <form action="" method="post">
     <div class="mb-3">
-        <label class="form-label">Subject</label>
+        <label class="form-label">Sujet</label>
         <input type="text" name="subject" class="form-control">
     </div>
     <div class="mb-3">
@@ -10,8 +10,8 @@
         <input type="email" name="email" class="form-control">
     </div>
     <div class="mb-3">
-        <label  class="form-label">body</label>
+        <label  class="form-label">Text</label>
         <textarea name="body" class="form-control"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>

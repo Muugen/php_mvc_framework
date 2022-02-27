@@ -1,3 +1,3 @@
-<h1>Home</h1>
+<h1>Accueil</h1>
 
-<h3>Welcome <?php echo $name ?></h3>
+<h3>Bienvenue <?php echo $name ?></h3>
