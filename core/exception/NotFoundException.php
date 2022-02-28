@@ -11,6 +11,6 @@ namespace app\core\exception;
 
 class NotFoundException extends \Exception
 {
-    protected $message = 'La page que vous recherchez est introuvable. ';
+    protected $message = 'La page que vous recherchez est introuvable.';
     protected $code = 404;
 }

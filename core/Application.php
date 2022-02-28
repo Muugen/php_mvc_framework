@@ -22,6 +22,7 @@ class Application
     public Session $session;
     public DataBase $db;
     public ?DbModel $user;
+    public View $view;
 
     public static Application $app;
     public ?Controller $controller = null;
@@ -35,7 +36,8 @@ class Application
         $this->response = new Response();
         $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
-        
+        $this->view = new View();
+
         $this->db = new DataBase($config['db']);
 
         $primaryValue = $this->session->get('user');
@@ -55,13 +57,20 @@ class Application
 
     public function run()
     {
+        // try {
+        //     echo $this->router->resolve();
+        // }
+        // catch(\Exception $e) {
+        //     $this->response->setStatusCode($e->getCode());
+        //     echo $this->router->renderView('_error', [
+        //         'exception' => $e
+        //     ]);
+        // }
         try {
             echo $this->router->resolve();
-        }
-        catch(\Exception $e) {
-            $this->response->setStatusCode($e->getCode());
-            echo $this->router->renderView('_error', [
-                'exception' => $e
+        } catch (\Exception $e) {
+            echo $this->view->renderView('_error', [
+                'exception' => $e,
             ]);
         }
     }
