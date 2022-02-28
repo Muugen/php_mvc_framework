@@ -23,28 +23,31 @@ use app\core\Application;
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Accueil</a>
+                        <a class="nav-link" aria-current="page" href="/">Accueil</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/contact">Nous contacter</a>
+                        <a class="nav-link" href="/contact">Nous contacter</a>
                     </li>
                 </ul>
             </div>
             <?php if (Application::isGuest()): ?>
                 <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/login">Connexion</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/register">S'inscrire</a>
-                        </li>
+                    </li>
                 </ul>
             <?php else: ?>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/logout">Bienvenue <?php echo Application::$app->user->getDisplayName() ?>
-                    (Deconnexion)
-                    </a>
+                        <a class="nav-link" aria-current="page" href="/profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/logout">Bienvenue <?php echo Application::$app->user->getDisplayName() ?>
+                        (Deconnexion)
+                        </a>
                     </li>
                 </ul>
             <?php endif; ?>

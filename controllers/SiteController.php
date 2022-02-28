@@ -30,6 +30,6 @@ class SiteController extends Controller
 
     public function handleContact(Request $request)
     {
-        return 'traitement des données en cours';
+        return 'Traitement des données en cours';
     }
 }
