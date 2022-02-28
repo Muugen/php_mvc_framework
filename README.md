@@ -1,7 +1,7 @@
 # php_mvc_framework
 
 * Télécharger l'archive ou cloner le projet en utilisant git
-* Créer la tabble de données (mysql)
+* Créer la tabble de données (sql)
 * Créez le fichier .env à partir du fichier .env.example.
 * installez composer (https://getcomposer.org/download/)
 * installez phpdotenv en exécutant la commande ```composer require vlucas/phpdotenv``` (https://github.com/vlucas/phpdotenv)
