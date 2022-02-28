@@ -1,7 +1,5 @@
 <?php
 
-use app\core\Application;
-
 class m0001_initial
 {
     public function up()

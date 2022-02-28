@@ -1,14 +1,15 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
 
 use app\core\Model;
+use app\core\Application;
 
 /**
  * Class DbModel
  * 
  * @author Anthony HUYNH <anthonyhuynh1204@gmail.com>
- * @package app\core
+ * @package app\core\db
  */
 
 abstract class DbModel extends Model

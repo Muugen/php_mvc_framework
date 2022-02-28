@@ -2,6 +2,9 @@
 
 namespace app\core;
 
+use app\core\db\DbModel;
+use app\core\db\DataBase;
+
 /**
  * Class Application
  * 
@@ -21,7 +24,7 @@ class Application
     public Response $response;
     public Session $session;
     public DataBase $db;
-    public ?DbModel $user;
+    public ?UserModel $user;
     public View $view;
 
     public static Application $app;
@@ -57,15 +60,6 @@ class Application
 
     public function run()
     {
-        // try {
-        //     echo $this->router->resolve();
-        // }
-        // catch(\Exception $e) {
-        //     $this->response->setStatusCode($e->getCode());
-        //     echo $this->router->renderView('_error', [
-        //         'exception' => $e
-        //     ]);
-        // }
         try {
             echo $this->router->resolve();
         } catch (\Exception $e) {
@@ -96,7 +90,7 @@ class Application
         return $this;
     }
 
-    public function login(DbModel $user)
+    public function login(UserModel $user)
     {
         $this->user = $user;
         $primaryKey = $user->primaryKey();

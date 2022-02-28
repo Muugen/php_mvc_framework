@@ -1,12 +1,14 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
+
+use app\core\Application;
 
 /**
  * Class DataBase
  * 
  * @author Anthony HUYNH <anthonyhuynh1204@gmail.com>
- * @package app\core
+ * @package app\core\db
  */
 
 class DataBase
