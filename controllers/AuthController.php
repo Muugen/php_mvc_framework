@@ -2,13 +2,13 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
+use anthonyhuynh\PhpMvcFramework\Application;
+use anthonyhuynh\PhpMvcFramework\Controller;
+use anthonyhuynh\PhpMvcFramework\Request;
+use anthonyhuynh\PhpMvcFramework\Response;
 use app\models\LoginForm;
 use app\models\User;
-use app\core\middlewares\AuthMiddleware;
+use anthonyhuynh\PhpMvcFramework\middlewares\AuthMiddleware;
 
 /**
  * Class AuthController
@@ -68,7 +68,7 @@ class AuthController extends Controller
 
     public function profile()
     {
-        
+
         return $this->render('profile');
     }
 }

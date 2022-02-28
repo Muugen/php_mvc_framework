@@ -1,5 +1,5 @@
 <?php
-use app\core\Application;
+use anthonyhuynh\PhpMvcFramework\Application;
 
 ?>
 

@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\UserModel;
+use anthonyhuynh\PhpMvcFramework\UserModel;
 
 /**
  * Class User

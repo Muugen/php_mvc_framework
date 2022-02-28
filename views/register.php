@@ -1,12 +1,12 @@
 <?php
 /** @var $model \app\models\User */
-/** @var $this \app\core\View */
+/** @var $this \anthonyhuynh\PhpMvcFramework\View */
 $this->title = 'Inscriptiçon';
 ?>
 
 <h1>S'inscrire</h1>
 
-<?php $form = \app\core\form\Form::begin('', 'post') ?>
+<?php $form = \anthonyhuynh\PhpMvcFramework\form\Form::begin('', 'post') ?>
     <div class="row">
         <div class="col">
             <?php echo $form->field($model, 'firstname') ?>
@@ -19,4 +19,4 @@ $this->title = 'Inscriptiçon';
     <?php echo $form->field($model, 'password')->passwordField() ?>
     <?php echo $form->field($model, 'confirmPassword')->passwordField() ?>
     <button type="submit" class="btn btn-primary">INSCRIPTION</button>
-<?php \app\core\form\Form::end() ?>
+<?php \anthonyhuynh\PhpMvcFramework\form\Form::end() ?>

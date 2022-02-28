@@ -2,10 +2,10 @@
 
 namespace app\controllers;
 
-use app\core\Request;
-use app\core\Response;
-use app\core\Controller;
-use app\core\Application;
+use anthonyhuynh\PhpMvcFramework\Request;
+use anthonyhuynh\PhpMvcFramework\Response;
+use anthonyhuynh\PhpMvcFramework\Controller;
+use anthonyhuynh\PhpMvcFramework\Application;
 use app\models\ContactForm;
 
 /**

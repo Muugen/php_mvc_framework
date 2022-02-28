@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use anthonyhuynh\PhpMvcFramework\Application;
+use anthonyhuynh\PhpMvcFramework\Model;
 
 /**
  * Class LoginForm

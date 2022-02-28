@@ -1,6 +1,6 @@
 <?php
 /** @var $model \app\models\User */
-/** @var $this \app\core\View */
+/** @var $this \anthonyhuynh\PhpMvcFramework\View */
 $this->title = 'Accueil';
 ?>
 

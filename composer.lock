@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bafbcc0be7b800811e1c99de12d9dc4",
+    "content-hash": "872d7aa3337ddc47ad86007ee028c7f3",
     "packages": [
+        {
+            "name": "anthonyhuynh/php_mvc_core",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Muugen/AH_php_mvc_core.git",
+                "reference": "53c09f995dd33c5bd4bac0b67a44e2f2512cdb30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Muugen/AH_php_mvc_core/zipball/53c09f995dd33c5bd4bac0b67a44e2f2512cdb30",
+                "reference": "53c09f995dd33c5bd4bac0b67a44e2f2512cdb30",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "anthonyhuynh\\PhpMvcFramework\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "anthony huynh",
+                    "email": "anthonyhuynh1204@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/Muugen/AH_php_mvc_core/issues",
+                "source": "https://github.com/Muugen/AH_php_mvc_core/tree/v1.0.2"
+            },
+            "time": "2022-02-28T05:54:57+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.0.4",

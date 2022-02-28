@@ -1,9 +1,9 @@
 <?php
-/** @var $this \app\core\View */
+/** @var $this \anthonyhuynh\PhpMvcFramework\View */
 /** @var $model \app\models\ContactForm */
 
-use app\core\form\Form;
-use app\core\form\TextAreaField;
+use anthonyhuynh\PhpMvcFramework\form\Form;
+use anthonyhuynh\PhpMvcFramework\form\TextAreaField;
 
 $this->title = 'Contact';
 ?>
