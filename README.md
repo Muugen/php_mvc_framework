@@ -1,5 +1,7 @@
 # php_mvc_framework
 
+Prerequis php ^7.4
+
 * Télécharger l'archive ou cloner le projet en utilisant git
 * Créer la tabble de données (sql)
 * Créez le fichier .env à partir du fichier .env.example.
